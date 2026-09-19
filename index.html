@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Student Document Preview — Unofficial Project</title>
+  <style>
+    :root {
+      --ink: #17324d;
+      --accent: #d69b35;
+      --paper: #ffffff;
+      --background: #eef3f7;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--background);
+    }
+
+    header {
+      background: var(--ink);
+      color: #fff;
+      border-bottom: 5px solid var(--accent);
+      padding: 22px 18px;
+    }
+
+    .header-inner, main { max-width: 920px; margin: 0 auto; }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .brand img {
+      width: 72px;
+      height: 72px;
+      object-fit: contain;
+      background: #fff;
+      border-radius: 8px;
+      padding: 5px;
+    }
+
+    h1, h2, p { margin-top: 0; }
+    h1 { margin-bottom: 5px; font-size: clamp(1.35rem, 4vw, 2rem); }
+    .subtitle { margin-bottom: 0; opacity: .86; }
+
+    .notice {
+      margin: 24px 0;
+      padding: 14px 16px;
+      border-left: 5px solid var(--accent);
+      background: #fff8e8;
+      color: #543d12;
+      border-radius: 4px;
+    }
+
+    .card {
+      background: var(--paper);
+      border-radius: 10px;
+      padding: clamp(18px, 4vw, 34px);
+      box-shadow: 0 5px 20px rgba(23, 50, 77, .12);
+    }
+
+    .document {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 75vh;
+      object-fit: contain;
+      border: 1px solid #d8e0e7;
+      background: #fafafa;
+    }
+
+    .actions { margin-top: 22px; display: flex; flex-wrap: wrap; gap: 12px; }
+
+    a.button {
+      display: inline-block;
+      padding: 11px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 650;
+      background: var(--ink);
+      color: #fff;
+    }
+
+    a.button.secondary { background: #e5ebf0; color: var(--ink); }
+    footer { max-width: 920px; margin: 22px auto; padding: 0 18px 24px; font-size: .9rem; color: #526577; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner brand">
+      <img src="IMG_6305.png" alt="School logo">
+      <div>
+        <h1>Student Document Preview</h1>
+        <p class="subtitle">A school-project presentation page</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="notice" role="note">
+      <strong>Unofficial school project:</strong> This page is an independent mockup and is not the official university verification portal.
+    </div>
+
+    <section class="card" aria-labelledby="preview-title">
+      <h2 id="preview-title">Uploaded document</h2>
+      <img class="document" src="IMG_6300.jpeg" alt="Uploaded student document">
+      <div class="actions">
+        <a class="button" href="IMG_6300.jpeg" target="_blank" rel="noopener">Open image</a>
+        <a class="button secondary" href="https://portal.edouniversity.edu.ng/verify/291513754846" target="_blank" rel="noopener noreferrer">Visit official verification page</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Created for educational demonstration only. The logo is displayed as an uploaded reference image; this page does not represent or certify any institution or document.
+  </footer>
+</body>
+</html>
